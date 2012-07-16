@@ -415,7 +415,6 @@
 		05AFF3AC15B3A5E9001295F5 = {
 			isa = PBXGroup;
 			children = (
-				05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */,
 				05AFF53815B3BB71001295F5 /* External */,
 				05AFF3E015B3A8A9001295F5 /* Default@2x.png */,
 				05AFF3DE15B3A8A3001295F5 /* Default.png */,
@@ -440,6 +439,7 @@
 		05AFF3BA15B3A5E9001295F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */,
 				05AFF3E615B3A8FE001295F5 /* QuartzCore.framework */,
 				05AFF3E415B3A8F2001295F5 /* CoreLocation.framework */,
 				05AFF3E215B3A8ED001295F5 /* CoreData.framework */,
@@ -1047,6 +1047,7 @@
 				05AFF3D715B3A5E9001295F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
