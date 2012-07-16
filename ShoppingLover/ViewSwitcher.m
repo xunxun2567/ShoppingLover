@@ -7,7 +7,10 @@
 //
 
 #import "ViewSwitcher.h"
+#import "UpdateManager.h"
 #import "UpdateViewController.h"
+#import "BrandViewController.h"
+
 
 @implementation ViewSwitcher
 
@@ -24,8 +27,15 @@ ViewSwitcher* g_viewSwithcerInstance;
     mainWindow = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     
     updateViewController = [[UpdateViewController alloc]initWithNibName:@"UpdateViewController" bundle:nil];
+    brandViewController = [[BrandViewController alloc]initWithNibName:@"BrandViewController" bundle:nil];
     
-    mainWindow.rootViewController = updateViewController;
+    if ([[UpdateManager defaultManager]isFirstRun]) {
+        mainWindow.rootViewController = updateViewController;
+    }
+    else {
+        mainWindow.rootViewController = brandViewController;
+    }
+    
     [mainWindow makeKeyAndVisible];    
 }
 

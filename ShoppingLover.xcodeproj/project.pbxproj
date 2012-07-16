@@ -178,6 +178,10 @@
 		05AFF53215B3B81C001295F5 /* OfficialWebsiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05AFF53015B3B81C001295F5 /* OfficialWebsiteViewController.xib */; };
 		05AFF53615B3B866001295F5 /* ShopLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF53415B3B866001295F5 /* ShopLocationViewController.m */; };
 		05AFF53715B3B866001295F5 /* ShopLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05AFF53515B3B866001295F5 /* ShopLocationViewController.xib */; };
+		05AFF54315B3BC02001295F5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF54015B3BC02001295F5 /* JSONKit.m */; };
+		05AFF54415B3BC02001295F5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF54215B3BC02001295F5 /* Reachability.m */; };
+		05AFF54815B3BC42001295F5 /* UpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF54715B3BC42001295F5 /* UpdateManager.m */; };
+		05AFF54E15B3C3FB001295F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -369,6 +373,13 @@
 		05AFF53315B3B866001295F5 /* ShopLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopLocationViewController.h; sourceTree = "<group>"; };
 		05AFF53415B3B866001295F5 /* ShopLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopLocationViewController.m; sourceTree = "<group>"; };
 		05AFF53515B3B866001295F5 /* ShopLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopLocationViewController.xib; sourceTree = "<group>"; };
+		05AFF53F15B3BC02001295F5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = External/JSONKit.h; sourceTree = "<group>"; };
+		05AFF54015B3BC02001295F5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = External/JSONKit.m; sourceTree = "<group>"; };
+		05AFF54115B3BC02001295F5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = External/Reachability.h; sourceTree = "<group>"; };
+		05AFF54215B3BC02001295F5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = External/Reachability.m; sourceTree = "<group>"; };
+		05AFF54615B3BC42001295F5 /* UpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateManager.h; sourceTree = "<group>"; };
+		05AFF54715B3BC42001295F5 /* UpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateManager.m; sourceTree = "<group>"; };
+		05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AFF54E15B3C3FB001295F5 /* SystemConfiguration.framework in Frameworks */,
 				05AFF3E715B3A8FE001295F5 /* QuartzCore.framework in Frameworks */,
 				05AFF3E515B3A8F2001295F5 /* CoreLocation.framework in Frameworks */,
 				05AFF3E315B3A8ED001295F5 /* CoreData.framework in Frameworks */,
@@ -391,6 +403,8 @@
 		05AFF3AC15B3A5E9001295F5 = {
 			isa = PBXGroup;
 			children = (
+				05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */,
+				05AFF53815B3BB71001295F5 /* External */,
 				05AFF3E015B3A8A9001295F5 /* Default@2x.png */,
 				05AFF3DE15B3A8A3001295F5 /* Default.png */,
 				05AFF3DC15B3A856001295F5 /* logo button -114.png */,
@@ -427,6 +441,7 @@
 		05AFF3C115B3A5E9001295F5 /* ShoppingLover */ = {
 			isa = PBXGroup;
 			children = (
+				05AFF54515B3BC26001295F5 /* Backend */,
 				05AFF4FA15B3AE61001295F5 /* Controller */,
 				05AFF4F915B3AE5C001295F5 /* Model */,
 				05AFF4F815B3AE55001295F5 /* View */,
@@ -652,6 +667,26 @@
 				05AFF53515B3B866001295F5 /* ShopLocationViewController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		05AFF53815B3BB71001295F5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				05AFF53F15B3BC02001295F5 /* JSONKit.h */,
+				05AFF54015B3BC02001295F5 /* JSONKit.m */,
+				05AFF54115B3BC02001295F5 /* Reachability.h */,
+				05AFF54215B3BC02001295F5 /* Reachability.m */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		05AFF54515B3BC26001295F5 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				05AFF54615B3BC42001295F5 /* UpdateManager.h */,
+				05AFF54715B3BC42001295F5 /* UpdateManager.m */,
+			);
+			name = Backend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -880,6 +915,9 @@
 				05AFF52C15B3B3FC001295F5 /* ActivityViewController.m in Sources */,
 				05AFF53115B3B81C001295F5 /* OfficialWebsiteViewController.m in Sources */,
 				05AFF53615B3B866001295F5 /* ShopLocationViewController.m in Sources */,
+				05AFF54315B3BC02001295F5 /* JSONKit.m in Sources */,
+				05AFF54415B3BC02001295F5 /* Reachability.m in Sources */,
+				05AFF54815B3BC42001295F5 /* UpdateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +955,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-lz";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -935,6 +974,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lz";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

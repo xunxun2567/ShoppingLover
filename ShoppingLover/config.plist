@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>server</key>
+	<key>server_address</key>
 	<string>211.152.54.48:8148</string>
-	<key>db</key>
+	<key>database_file</key>
 	<string>v1.0.0.sqlite</string>
 </dict>
 </plist>
