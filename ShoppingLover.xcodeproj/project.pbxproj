@@ -182,6 +182,10 @@
 		05AFF54415B3BC02001295F5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF54215B3BC02001295F5 /* Reachability.m */; };
 		05AFF54815B3BC42001295F5 /* UpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF54715B3BC42001295F5 /* UpdateManager.m */; };
 		05AFF54E15B3C3FB001295F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */; };
+		05AFF55115B3F938001295F5 /* BrandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF55015B3F938001295F5 /* BrandManager.m */; };
+		05AFF55415B3F944001295F5 /* ItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF55315B3F944001295F5 /* ItemManager.m */; };
+		05AFF55715B3FA08001295F5 /* ShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF55615B3FA08001295F5 /* ShopManager.m */; };
+		05AFF55A15B3FA5D001295F5 /* ActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF55915B3FA5D001295F5 /* ActivityManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -380,6 +384,14 @@
 		05AFF54615B3BC42001295F5 /* UpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateManager.h; sourceTree = "<group>"; };
 		05AFF54715B3BC42001295F5 /* UpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateManager.m; sourceTree = "<group>"; };
 		05AFF54D15B3C3FB001295F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		05AFF54F15B3F938001295F5 /* BrandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandManager.h; sourceTree = "<group>"; };
+		05AFF55015B3F938001295F5 /* BrandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandManager.m; sourceTree = "<group>"; };
+		05AFF55215B3F944001295F5 /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManager.h; sourceTree = "<group>"; };
+		05AFF55315B3F944001295F5 /* ItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManager.m; sourceTree = "<group>"; };
+		05AFF55515B3FA08001295F5 /* ShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopManager.h; sourceTree = "<group>"; };
+		05AFF55615B3FA08001295F5 /* ShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopManager.m; sourceTree = "<group>"; };
+		05AFF55815B3FA5D001295F5 /* ActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityManager.h; sourceTree = "<group>"; };
+		05AFF55915B3FA5D001295F5 /* ActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -685,6 +697,14 @@
 			children = (
 				05AFF54615B3BC42001295F5 /* UpdateManager.h */,
 				05AFF54715B3BC42001295F5 /* UpdateManager.m */,
+				05AFF54F15B3F938001295F5 /* BrandManager.h */,
+				05AFF55015B3F938001295F5 /* BrandManager.m */,
+				05AFF55215B3F944001295F5 /* ItemManager.h */,
+				05AFF55315B3F944001295F5 /* ItemManager.m */,
+				05AFF55515B3FA08001295F5 /* ShopManager.h */,
+				05AFF55615B3FA08001295F5 /* ShopManager.m */,
+				05AFF55815B3FA5D001295F5 /* ActivityManager.h */,
+				05AFF55915B3FA5D001295F5 /* ActivityManager.m */,
 			);
 			name = Backend;
 			sourceTree = "<group>";
@@ -918,6 +938,10 @@
 				05AFF54315B3BC02001295F5 /* JSONKit.m in Sources */,
 				05AFF54415B3BC02001295F5 /* Reachability.m in Sources */,
 				05AFF54815B3BC42001295F5 /* UpdateManager.m in Sources */,
+				05AFF55115B3F938001295F5 /* BrandManager.m in Sources */,
+				05AFF55415B3F944001295F5 /* ItemManager.m in Sources */,
+				05AFF55715B3FA08001295F5 /* ShopManager.m in Sources */,
+				05AFF55A15B3FA5D001295F5 /* ActivityManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

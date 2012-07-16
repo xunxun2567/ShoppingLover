@@ -10,7 +10,10 @@
 #import "UpdateManager.h"
 #import "UpdateViewController.h"
 #import "BrandViewController.h"
-
+#import "ItemViewController.h"
+#import "SettingViewController.h"
+#import "DesireViewController.h"
+#import "ActivityViewController.h"
 
 @implementation ViewSwitcher
 
@@ -28,6 +31,10 @@ ViewSwitcher* g_viewSwithcerInstance;
     
     updateViewController = [[UpdateViewController alloc]initWithNibName:@"UpdateViewController" bundle:nil];
     brandViewController = [[BrandViewController alloc]initWithNibName:@"BrandViewController" bundle:nil];
+    itemViewController = [[ItemViewController alloc]initWithNibName:@"ItemViewController" bundle:nil];
+    settingViewController = [[SettingViewController alloc]initWithNibName:@"SettingViewController" bundle:nil];
+    desireViewController = [[DesireViewController alloc]initWithNibName:@"DesireViewController" bundle:nil];
+    activityViewController = [[ActivityViewController alloc]initWithNibName:@"ActivityViewController" bundle:nil];
     
     if ([[UpdateManager defaultManager]isFirstRun]) {
         mainWindow.rootViewController = updateViewController;
@@ -42,5 +49,26 @@ ViewSwitcher* g_viewSwithcerInstance;
 -(void)terminate    {
     [mainWindow release];
 }
+
+-(void)switchToBrandView    {
+    mainWindow.rootViewController = brandViewController;
+}
+
+-(void)switchToItemView {
+    mainWindow.rootViewController = itemViewController;
+}
+
+-(void)switchToSettingView  {
+    mainWindow.rootViewController = settingViewController;
+}
+
+-(void)switchToDesireView   {
+    mainWindow.rootViewController = desireViewController;
+}
+
+-(void)switchToActivityView {
+    mainWindow.rootViewController = activityViewController;
+}
+
 
 @end

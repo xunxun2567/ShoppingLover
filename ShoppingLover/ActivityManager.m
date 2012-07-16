@@ -1,13 +1,13 @@
 //
-//  UpdateViewController.h
+//  ActivityManager.m
 //  ShoppingLover
 //
 //  Created by Lingkai Kong on 12-7-16.
 //  Copyright (c) 2012年 Egibbon Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ActivityManager.h"
 
-@interface UpdateViewController : UIViewController <UIAlertViewDelegate>
+@implementation ActivityManager
 
 @end

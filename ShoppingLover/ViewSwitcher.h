@@ -32,7 +32,12 @@
 +(ViewSwitcher*)defaultSwitcher;
 
 -(void)start;
-
 -(void)terminate;
+
+-(void)switchToBrandView;
+-(void)switchToItemView;
+-(void)switchToSettingView;
+-(void)switchToDesireView;
+-(void)switchToActivityView;
 
 @end
