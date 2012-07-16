@@ -158,6 +158,11 @@
 		05AFF4F515B3AC20001295F5 /* white_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 05AFF48B15B3AC20001295F5 /* white_bg.png */; };
 		05AFF4F615B3AC20001295F5 /* window_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 05AFF48C15B3AC20001295F5 /* window_bar.png */; };
 		05AFF4F715B3AC20001295F5 /* xinlangweibo_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05AFF48D15B3AC20001295F5 /* xinlangweibo_logo.png */; };
+		05AFF4FD15B3AED0001295F5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF4FB15B3AED0001295F5 /* Model.xcdatamodeld */; };
+		05AFF50315B3AF79001295F5 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF50215B3AF79001295F5 /* Brand.m */; };
+		05AFF50615B3AF79001295F5 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF50515B3AF79001295F5 /* Shop.m */; };
+		05AFF50915B3AF79001295F5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF50815B3AF79001295F5 /* Item.m */; };
+		05AFF50C15B3AF79001295F5 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AFF50B15B3AF79001295F5 /* Activity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -317,6 +322,15 @@
 		05AFF48B15B3AC20001295F5 /* white_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_bg.png; path = Resource/PNG/white_bg.png; sourceTree = "<group>"; };
 		05AFF48C15B3AC20001295F5 /* window_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = window_bar.png; path = Resource/PNG/window_bar.png; sourceTree = "<group>"; };
 		05AFF48D15B3AC20001295F5 /* xinlangweibo_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xinlangweibo_logo.png; path = Resource/PNG/xinlangweibo_logo.png; sourceTree = "<group>"; };
+		05AFF4FC15B3AED0001295F5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		05AFF50115B3AF79001295F5 /* Brand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brand.h; sourceTree = "<group>"; };
+		05AFF50215B3AF79001295F5 /* Brand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brand.m; sourceTree = "<group>"; };
+		05AFF50415B3AF79001295F5 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		05AFF50515B3AF79001295F5 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		05AFF50715B3AF79001295F5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		05AFF50815B3AF79001295F5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		05AFF50A15B3AF79001295F5 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		05AFF50B15B3AF79001295F5 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +389,9 @@
 		05AFF3C115B3A5E9001295F5 /* ShoppingLover */ = {
 			isa = PBXGroup;
 			children = (
+				05AFF4FA15B3AE61001295F5 /* Controller */,
+				05AFF4F915B3AE5C001295F5 /* Model */,
+				05AFF4F815B3AE55001295F5 /* View */,
 				05AFF3CA15B3A5E9001295F5 /* AppDelegate.h */,
 				05AFF3CB15B3A5E9001295F5 /* AppDelegate.m */,
 				05AFF3CD15B3A5E9001295F5 /* ViewController.h */,
@@ -544,6 +561,36 @@
 				05AFF40615B3AC05001295F5 /* zaracollector_logo.png */,
 			);
 			name = LOGO;
+			sourceTree = "<group>";
+		};
+		05AFF4F815B3AE55001295F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05AFF4F915B3AE5C001295F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05AFF4FB15B3AED0001295F5 /* Model.xcdatamodeld */,
+				05AFF50A15B3AF79001295F5 /* Activity.h */,
+				05AFF50B15B3AF79001295F5 /* Activity.m */,
+				05AFF50715B3AF79001295F5 /* Item.h */,
+				05AFF50815B3AF79001295F5 /* Item.m */,
+				05AFF50415B3AF79001295F5 /* Shop.h */,
+				05AFF50515B3AF79001295F5 /* Shop.m */,
+				05AFF50115B3AF79001295F5 /* Brand.h */,
+				05AFF50215B3AF79001295F5 /* Brand.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		05AFF4FA15B3AE61001295F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,6 +799,11 @@
 				05AFF3C815B3A5E9001295F5 /* main.m in Sources */,
 				05AFF3CC15B3A5E9001295F5 /* AppDelegate.m in Sources */,
 				05AFF3CF15B3A5E9001295F5 /* ViewController.m in Sources */,
+				05AFF4FD15B3AED0001295F5 /* Model.xcdatamodeld in Sources */,
+				05AFF50315B3AF79001295F5 /* Brand.m in Sources */,
+				05AFF50615B3AF79001295F5 /* Shop.m in Sources */,
+				05AFF50915B3AF79001295F5 /* Item.m in Sources */,
+				05AFF50C15B3AF79001295F5 /* Activity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,6 +917,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05AFF4FB15B3AED0001295F5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05AFF4FC15B3AED0001295F5 /* Model.xcdatamodel */,
+			);
+			currentVersion = 05AFF4FC15B3AED0001295F5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 05AFF3AE15B3A5E9001295F5 /* Project object */;
 }
