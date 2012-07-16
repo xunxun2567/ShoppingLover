@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ActivityViewController.h
 //  ShoppingLover
 //
 //  Created by Lingkai Kong on 12-7-16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface ActivityViewController : UIViewController
 
 @end
